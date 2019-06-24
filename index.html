@@ -8,7 +8,7 @@ layout: default
 
   <ul class="post-list">
     {% assign sorted-posts = site.posts | reverse %}
-    {% for post in sorted.posts %}
+    {% for post in sorted-posts %}
       <li>
         <h2 class="wrapper">
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
